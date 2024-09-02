@@ -52,16 +52,17 @@ const PropertyList: React.FC<PropertyListProps> = ({ properties }) => {
   }
 
   const filteredProperties = properties.filter(property => {
+    debugger;
     const { location, minPrice, maxPrice, bedrooms, amenities } = filters
 
     const matchesLocation = location
-      ? property.location.includes(location)
+      ? property.location.toLowerCase().includes(location.toLowerCase())
       : true
     const matchesPrice =
       (!minPrice || property.price >= minPrice) &&
       (!maxPrice || property.price <= maxPrice)
     const matchesBedrooms = bedrooms ? property.bedrooms >= bedrooms : true
-    const matchesAmenities = amenities
+    const matchesAmenities = amenities && amenities.length > 0
       ? amenities.every(amenity =>
           property.amenities.some(
             propertyAmenity =>

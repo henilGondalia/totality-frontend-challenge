@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Select, SelectSection, SelectItem} from "@nextui-org/select";
+import {Select, SelectItem} from "@nextui-org/select";
 
 type FilterProps = {
   onFilterChange: (filters: Filters) => void;
@@ -30,18 +30,11 @@ const Filter: React.FC<FilterProps> = ({ onFilterChange }) => {
     });
   };
 
-  // const handleAmenitiesChange = (selectedKeys: React.ChangeEvent<HTMLSelectElement>) => {
-    // console.log("selectedKeys",selectedKeys);
-  const handleAmenitiesChange = (selectedKeys: Set<string>) => {
-    setAmenities(Array.from(selectedKeys));
-    handleFilterChange();
+  const handleAmenitiesChange = (selectedKeys: React.ChangeEvent<HTMLSelectElement>) => {
+      const selectedOptions = selectedKeys.target.value ? selectedKeys.target.value.split(',').map(amenity => amenity.trim()) : [];
+      setAmenities(selectedOptions);
+      handleFilterChange();
   };
-
-//   const handleAmenitiesChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-//     const selectedOptions = Array.from(e.target.selectedOptions, option => option.value);
-//     setAmenities(selectedOptions);
-//     handleFilterChange();
-//   };
 
   return (
     <div className="bg-white p-4 shadow-md rounded-lg mb-6">
