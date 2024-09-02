@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Beautiful Beach House",
+    "description": "A lovely beach house with stunning views.",
+    "price": 250,
+    "image": "/images/beach-house.jpg",
+    "location": "Miami",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "amenities": ["WiFi", "Parking"]
+  },
+  {
+    "id": 2,
+    "title": "Modern Apartment",
+    "description": "A stylish apartment in the city center.",
+    "price": 180,
+    "image": "/images/modern-apartment.jpg",
+    "location": "New York",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "amenities": ["WiFi", "Parking"]
+  },
+  {
+    "id": 3,
+    "title": "Cozy Mountain Cabin",
+    "description": "A peaceful cabin in the mountains.",
+    "price": 150,
+    "image": "/images/mountain-cabin.jpg",
+    "location": "Aspen",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "amenities": ["Fireplace", "Parking"]
+  },
+  {
+    "id": 4,
+    "title": "Luxury Penthouse",
+    "description": "A luxurious penthouse with a panoramic view.",
+    "price": 400,
+    "image": "/images/luxury-penthouse.jpg",
+    "location": "Los Angeles",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "amenities": ["WiFi", "Pool", "Parking"]
+  },
+  {
+    "id": 5,
+    "title": "Charming Country House",
+    "description": "A charming house in the countryside.",
+    "price": 220,
+    "image": "/images/country-house.jpg",
+    "location": "Nashville",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "amenities": ["Garden", "Parking"]
+  },
+  {
+    "id": 6,
+    "title": "Urban Loft",
+    "description": "A trendy loft in the heart of the city.",
+    "price": 200,
+    "image": "/images/beach-house.jpg",
+    "location": "Chicago",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "amenities": ["WiFi", "Gym"]
+  },
+  {
+    "id": 7,
+    "title": "Secluded Lake House",
+    "description": "A quiet house by the lake, perfect for relaxation.",
+    "price": 300,
+    "image": "/images/lake-house.jpg",
+    "location": "Lake Tahoe",
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "amenities": ["WiFi", "Boating", "Parking"]
+  },
+  {
+    "id": 8,
+    "title": "Historic Townhouse",
+    "description": "A historic townhouse with modern amenities.",
+    "price": 250,
+    "image": "/images/townhouse.jpg",
+    "location": "Boston",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "amenities": ["WiFi", "Parking"]
+  }
+]
